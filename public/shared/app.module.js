@@ -10,10 +10,11 @@
 	function config($routeProvider){
 		$routeProvider
 		.when('/', {
-			templateUrl: '/partials/date.select.html',
-			controller: 'MainController',
-			controllerAs: 'vm'
+			templateUrl: '/partials/main/main.html',
+			controller: 'MainCtrl',
+			controllerAs: 'main'
 		})
+		.otherwise({ redirectTo: '/' });
 	}
 
 })();
